@@ -1,0 +1,13 @@
+[{
+  "userId": 1,
+  "projectId": 1,
+  "hours": 3,
+  "date": "2018-01-01"
+},
+{
+  "userId": 2,
+  "projectId": 123,
+  "hours": 5,
+  "date": "2018-10-10"
+}]
+
