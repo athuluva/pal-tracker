@@ -84,6 +84,16 @@ public class TimeEntryControllerTest {
     }
 
     @Test
+    public void testList_Empty() throws Exception {
+        ResponseEntity<List<TimeEntry>> response = controller.list();
+
+        verify(timeEntryRepository).list();
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        List<TimeEntry> expected = asList();
+        assertThat(response.getBody()).isEqualTo(expected);
+    }
+
+    @Test
     public void testUpdate() throws Exception {
         TimeEntry expected = new TimeEntry(1L, 987L, 654L, LocalDate.parse("2017-01-07"), 4);
         doReturn(expected)
