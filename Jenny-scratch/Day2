@@ -1,0 +1,1676 @@
+Day 2 Route: pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+
+6fc936d187aa8993bedbde8e40762ebe5e0fe437
+
+
+
+
+
+
+
+pal_user@EXPLODE:~$ cd workspace
+pal_user@EXPLODE:~/workspace$ dir
+assignment-submission  pal-tracker  pal-tracker.zip  README.md
+pal_user@EXPLODE:~/workspace$ cd pal-tracker
+pal_user@EXPLODE:~/workspace/pal-tracker$ dir
+build	      gradle   gradlew.bat  pal-tracker.iml  settings.gradle
+build.gradle  gradlew  out	    README.md	     src
+pal_user@EXPLODE:~/workspace/pal-tracker$ git remote -v
+origin	https://github.com/hongxiao20/pal-tracker.git (fetch)
+origin	https://github.com/hongxiao20/pal-tracker.git (push)
+origin_kiran	https://github.com/kiransuresh85/pal-tracker.git (fetch)
+origin_kiran	https://github.com/kiransuresh85/pal-tracker.git (push)
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle tasks
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Task :tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Application tasks
+-----------------
+bootRun - Run the project with support for auto-detecting main class and reloading static resources
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+bootRepackage - Repackage existing JAR and WAR archives so that they can be executed from the command line using 'java -jar'
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+wrapper - Generates Gradle wrapper files.
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the main source code.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'pal-tracker'.
+components - Displays the components produced by root project 'pal-tracker'. [incubating]
+dependencies - Displays all dependencies declared in root project 'pal-tracker'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'pal-tracker'.
+dependencyManagement - Displays the dependency management declared in root project 'pal-tracker'.
+dependentComponents - Displays the dependent components of components in root project 'pal-tracker'. [incubating]
+help - Displays a help message.
+model - Displays the configuration model of root project 'pal-tracker'. [incubating]
+projects - Displays the sub-projects of root project 'pal-tracker'.
+properties - Displays the properties of root project 'pal-tracker'.
+tasks - Displays the tasks runnable from root project 'pal-tracker'.
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+
+To see all tasks and more detail, run gradle tasks --all
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+pal_user@EXPLODE:~/workspace/pal-tracker$ dir
+build         gradle   gradlew.bat  pal-tracker.iml  settings.gradle
+build.gradle  gradlew  out	    README.md	     src
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle bootrun
+
+> Task :bootRun FAILED
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-10-09 09:17:02.282  INFO 4275 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on EXPLODE with PID 4275 (/home/pal_user/workspace/pal-tracker/build/classes/java/main started by pal_user in /home/pal_user/workspace/pal-tracker)
+2018-10-09 09:17:02.284  INFO 4275 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2018-10-09 09:17:02.327  INFO 4275 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:17:02 EDT 2018]; root of context hierarchy
+2018-10-09 09:17:03.324  INFO 4275 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 09:17:03.335  INFO 4275 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 09:17:03.336  INFO 4275 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-09 09:17:03.407  INFO 4275 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 09:17:03.407  INFO 4275 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1082 ms
+2018-10-09 09:17:03.493  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 09:17:03.497  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 09:17:03.497  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 09:17:03.498  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 09:17:03.498  INFO 4275 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 09:17:03.531  INFO 4275 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-09 09:17:03.545  INFO 4275 --- [           main] utoConfigurationReportLoggingInitializer :
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-09 09:17:03.551 ERROR 4275 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalArgumentException: Could not resolve placeholder 'WELCOME_MESSAGE' in value "${WELCOME_MESSAGE}"
+        at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [main/:na]
+
+2018-10-09 09:17:03.553  INFO 4275 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:17:02 EDT 2018]; root of context hierarchy
+2018-10-09 09:17:03.558  WARN 4275 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:17:02 EDT 2018]; root of context hierarchy
+        at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [main/:na]
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command '/usr/lib/jvm/java-8-openjdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 3s
+3 actionable tasks: 3 executed
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle bootrun
+
+> Task :bootRun FAILED
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-10-09 09:19:57.395  INFO 4438 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on EXPLODE with PID 4438 (/home/pal_user/workspace/pal-tracker/build/classes/java/main started by pal_user in /home/pal_user/workspace/pal-tracker)
+2018-10-09 09:19:57.398  INFO 4438 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2018-10-09 09:19:57.439  INFO 4438 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:19:57 EDT 2018]; root of context hierarchy
+2018-10-09 09:19:58.409  INFO 4438 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 09:19:58.420  INFO 4438 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 09:19:58.421  INFO 4438 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-09 09:19:58.490  INFO 4438 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 09:19:58.490  INFO 4438 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1053 ms
+2018-10-09 09:19:58.576  INFO 4438 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 09:19:58.580  INFO 4438 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 09:19:58.580  INFO 4438 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 09:19:58.580  INFO 4438 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 09:19:58.580  INFO 4438 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 09:19:58.609  INFO 4438 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-09 09:19:58.619  INFO 4438 --- [           main] utoConfigurationReportLoggingInitializer :
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-09 09:19:58.623 ERROR 4438 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalArgumentException: Could not resolve placeholder 'WELCOME_MESSAGE' in value "${WELCOME_MESSAGE}"
+        at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [main/:na]
+
+2018-10-09 09:19:58.624  INFO 4438 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:19:57 EDT 2018]; root of context hierarchy
+2018-10-09 09:19:58.626  WARN 4438 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:19:57 EDT 2018]; root of context hierarchy
+        at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+        at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+        at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [main/:na]
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command '/usr/lib/jvm/java-8-openjdk-amd64/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 2s
+3 actionable tasks: 2 executed, 1 up-to-date
+pal_user@EXPLODE:~/workspace/pal-tracker$ WELCOME_MESSAGE=hello ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-10-09 09:21:10.172  INFO 4534 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on EXPLODE with PID 4534 (/home/pal_user/workspace/pal-tracker/build/classes/java/main started by pal_user in /home/pal_user/workspace/pal-tracker)
+2018-10-09 09:21:10.175  INFO 4534 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2018-10-09 09:21:10.224  INFO 4534 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:21:10 EDT 2018]; root of context hierarchy
+2018-10-09 09:21:11.184  INFO 4534 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 09:21:11.194  INFO 4534 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 09:21:11.195  INFO 4534 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-09 09:21:11.283  INFO 4534 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 09:21:11.283  INFO 4534 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1062 ms
+2018-10-09 09:21:11.366  INFO 4534 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 09:21:11.369  INFO 4534 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 09:21:11.370  INFO 4534 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 09:21:11.370  INFO 4534 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 09:21:11.370  INFO 4534 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 09:21:11.592  INFO 4534 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:21:10 EDT 2018]; root of context hierarchy
+2018-10-09 09:21:11.643  INFO 4534 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String io.pivotal.pal.tracker.WelcomeController.sayHello()
+2018-10-09 09:21:11.645  INFO 4534 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 09:21:11.646  INFO 4534 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 09:21:11.667  INFO 4534 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:21:11.667  INFO 4534 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:21:11.693  INFO 4534 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:21:11.811  INFO 4534 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 09:21:11.868  INFO 4534 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 09:21:11.871  INFO 4534 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.911 seconds (JVM running for 2.165)
+<==========---> 80% EXECUTING [1m 17s]
+> :bootRun
+^C^Cpal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ WELCOME_MESSAGE=hello ./gradlew bootRun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-10-09 09:22:30.985  INFO 4670 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on EXPLODE with PID 4670 (/home/pal_user/workspace/pal-tracker/build/classes/java/main started by pal_user in /home/pal_user/workspace/pal-tracker)
+2018-10-09 09:22:30.987  INFO 4670 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2018-10-09 09:22:31.029  INFO 4670 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:22:31 EDT 2018]; root of context hierarchy
+2018-10-09 09:22:31.949  INFO 4670 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 09:22:31.958  INFO 4670 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 09:22:31.959  INFO 4670 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-09 09:22:32.018  INFO 4670 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 09:22:32.018  INFO 4670 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 991 ms
+2018-10-09 09:22:32.099  INFO 4670 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 09:22:32.102  INFO 4670 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 09:22:32.103  INFO 4670 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 09:22:32.103  INFO 4670 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 09:22:32.103  INFO 4670 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 09:22:32.295  INFO 4670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:22:31 EDT 2018]; root of context hierarchy
+2018-10-09 09:22:32.340  INFO 4670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String io.pivotal.pal.tracker.WelcomeController.sayHello()
+2018-10-09 09:22:32.342  INFO 4670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 09:22:32.343  INFO 4670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 09:22:32.363  INFO 4670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:32.363  INFO 4670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:32.388  INFO 4670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:32.482  INFO 4670 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 09:22:32.517  INFO 4670 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 09:22:32.520  INFO 4670 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.739 seconds (JVM running for 1.996)
+<==========---> 80% EXECUTING [3s]
+> :bootRun
+^C^Cpal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle bootrun
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2018-10-09 09:22:38.696  INFO 4765 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on EXPLODE with PID 4765 (/home/pal_user/workspace/pal-tracker/build/classes/java/main started by pal_user in /home/pal_user/workspace/pal-tracker)
+2018-10-09 09:22:38.699  INFO 4765 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2018-10-09 09:22:38.772  INFO 4765 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:22:38 EDT 2018]; root of context hierarchy
+2018-10-09 09:22:39.692  INFO 4765 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-10-09 09:22:39.703  INFO 4765 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-09 09:22:39.704  INFO 4765 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-10-09 09:22:39.774  INFO 4765 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-09 09:22:39.774  INFO 4765 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1004 ms
+2018-10-09 09:22:39.856  INFO 4765 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-09 09:22:39.860  INFO 4765 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 09:22:39.860  INFO 4765 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 09:22:39.860  INFO 4765 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 09:22:39.861  INFO 4765 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 09:22:40.080  INFO 4765 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ad282e0: startup date [Tue Oct 09 09:22:38 EDT 2018]; root of context hierarchy
+2018-10-09 09:22:40.135  INFO 4765 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String io.pivotal.pal.tracker.WelcomeController.sayHello()
+2018-10-09 09:22:40.138  INFO 4765 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-09 09:22:40.139  INFO 4765 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-09 09:22:40.161  INFO 4765 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:40.161  INFO 4765 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:40.190  INFO 4765 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-09 09:22:40.296  INFO 4765 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-09 09:22:40.372  INFO 4765 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-10-09 09:22:40.377  INFO 4765 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 1.878 seconds (JVM running for 2.088)
+2018-10-09 09:23:20.488  INFO 4765 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 09:23:20.489  INFO 4765 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-09 09:23:20.500  INFO 4765 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+<==========---> 80% EXECUTING [27m 58s]
+> :bootRun
+^C^Cpal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ ^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle test
+
+> Task :test
+2018-10-09 09:52:10.005  INFO 6402 --- [       Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5de45d16: startup date [Tue Oct 09 09:52:08 EDT 2018]; root of context hierarchy
+
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 2 executed, 1 up-to-date
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push pal-tracker -p build/libs/pal-tracker.jar
+Incorrect Usage: The specified path 'build/libs/pal-tracker.jar' does not exist.
+
+NAME:
+   push - Push a new app or sync changes to an existing app
+
+USAGE:
+   cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --droplet DROPLET_PATH
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]
+
+ALIAS:
+   p
+
+OPTIONS:
+   -b                           Custom buildpack by name (e.g. my-buildpack) or Git URL (e.g. 'https://github.com/cloudfoundry/java-buildpack.git') or Git URL with a branch or tag (e.g. 'https://github.com/cloudfoundry/java-buildpack.git#v3.3.0' for 'v3.3.0' tag). To use built-in buildpacks only, specify 'default' or 'null'
+   -c                           Startup command, set to null to reset to default start command
+   -d                           Specify a custom domain (e.g. private-domain.example.com, apps.internal.com) to use instead of the default domain
+   --docker-image, -o           Docker-image to be used (e.g. user/docker-image-name)
+   --docker-username            Repository username; used with password from environment variable CF_DOCKER_PASSWORD
+   --droplet                    Path to a tgz file with a pre-staged app
+   -f                           Path to manifest
+   --health-check-type, -u      Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')
+   --hostname, -n               Hostname (e.g. my-subdomain)
+   -i                           Number of instances
+   -k                           Disk limit (e.g. 256M, 1024M, 1G)
+   -m                           Memory limit (e.g. 256M, 1024M, 1G)
+   --no-hostname                Map the root domain to this app
+   --no-manifest                Ignore manifest file
+   --no-route                   Do not map a route to this app and remove routes from previous pushes of this app
+   --no-start                   Do not start an app after pushing
+   -p                           Path to app directory or to a zip file of the contents of the app directory
+   --random-route               Create a random route for this app
+   --route-path                 Path for the route
+   -s                           Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)
+   --vars-file                  Path to a variable substitution file for manifest; can specify multiple times
+   --var                        Variable key value pair for variable substitution, (e.g., name=app1); can specify multiple times
+   -t                           Time (in seconds) allowed to elapse between starting up an app and the first healthy response from the app
+
+ENVIRONMENT:
+   CF_STAGING_TIMEOUT=15        Max wait time for buildpack staging, in minutes
+   CF_STARTUP_TIMEOUT=5         Max wait time for app instance startup, in minutes
+   CF_DOCKER_PASSWORD=          Password used for private docker repository
+
+SEE ALSO:
+   apps, create-app-manifest, logs, ssh, start
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push pal-tracker -p build/libs/pal-tracker.jar --random-route
+Incorrect Usage: The specified path 'build/libs/pal-tracker.jar' does not exist.
+
+NAME:
+   push - Push a new app or sync changes to an existing app
+
+USAGE:
+   cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --droplet DROPLET_PATH
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]
+
+ALIAS:
+   p
+
+OPTIONS:
+   -b                           Custom buildpack by name (e.g. my-buildpack) or Git URL (e.g. 'https://github.com/cloudfoundry/java-buildpack.git') or Git URL with a branch or tag (e.g. 'https://github.com/cloudfoundry/java-buildpack.git#v3.3.0' for 'v3.3.0' tag). To use built-in buildpacks only, specify 'default' or 'null'
+   -c                           Startup command, set to null to reset to default start command
+   -d                           Specify a custom domain (e.g. private-domain.example.com, apps.internal.com) to use instead of the default domain
+   --docker-image, -o           Docker-image to be used (e.g. user/docker-image-name)
+   --docker-username            Repository username; used with password from environment variable CF_DOCKER_PASSWORD
+   --droplet                    Path to a tgz file with a pre-staged app
+   -f                           Path to manifest
+   --health-check-type, -u      Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')
+   --hostname, -n               Hostname (e.g. my-subdomain)
+   -i                           Number of instances
+   -k                           Disk limit (e.g. 256M, 1024M, 1G)
+   -m                           Memory limit (e.g. 256M, 1024M, 1G)
+   --no-hostname                Map the root domain to this app
+   --no-manifest                Ignore manifest file
+   --no-route                   Do not map a route to this app and remove routes from previous pushes of this app
+   --no-start                   Do not start an app after pushing
+   -p                           Path to app directory or to a zip file of the contents of the app directory
+   --random-route               Create a random route for this app
+   --route-path                 Path for the route
+   -s                           Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)
+   --vars-file                  Path to a variable substitution file for manifest; can specify multiple times
+   --var                        Variable key value pair for variable substitution, (e.g., name=app1); can specify multiple times
+   -t                           Time (in seconds) allowed to elapse between starting up an app and the first healthy response from the app
+
+ENVIRONMENT:
+   CF_STAGING_TIMEOUT=15        Max wait time for buildpack staging, in minutes
+   CF_STARTUP_TIMEOUT=5         Max wait time for app instance startup, in minutes
+   CF_DOCKER_PASSWORD=          Password used for private docker repository
+
+SEE ALSO:
+   apps, create-app-manifest, logs, ssh, start
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 0s
+6 actionable tasks: 3 executed, 3 up-to-date
+pal_user@EXPLODE:~/workspace/pal-tracker$ ls /build/libs
+ls: cannot access '/build/libs': No such file or directory
+pal_user@EXPLODE:~/workspace/pal-tracker$ ls
+build  build.gradle  gradle  gradlew  gradlew.bat  out  pal-tracker.iml  README.md  settings.gradle  src
+pal_user@EXPLODE:~/workspace/pal-tracker$ ./gradlew clean build
+
+> Task :test
+2018-10-09 10:00:38.973  INFO 6784 --- [       Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ff4322f: startup date [Tue Oct 09 10:00:37 EDT 2018]; root of context hierarchy
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+7 actionable tasks: 7 executed
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push pal-tracker -p build/libs/pal-tracker.jar --random-route
+Pushing app pal-tracker to org jenny-xiao / space sandbox as jxiao1@ford.com...
+Getting app info...
+Updating app with these attributes...
+  name:                pal-tracker
+  path:                /home/pal_user/workspace/pal-tracker/build/libs/pal-tracker.jar
+  command:             JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.10.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13548 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              1G
+  stack:               cflinuxfs2
+  routes:
+    pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+
+Updating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 316.33 KiB / 316.33 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Stopping app...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading staticfile_buildpack...
+   Downloading php_buildpack...
+   Downloading java_buildpack_offline...
+   Downloaded php_buildpack
+   Downloading ruby_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading go_buildpack...
+   Downloaded binary_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading python_buildpack...
+   Downloaded java_buildpack_offline
+   Downloaded ruby_buildpack
+   Downloaded python_buildpack
+   Downloaded go_buildpack
+   Downloaded dotnet_core_buildpack
+   Creating container
+   Successfully created container
+   Downloading build artifacts cache...
+   Downloading app package...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (12.3M)
+   -----> Java Buildpack v4.8 (offline) | https://github.com/cloudfoundry/java-buildpack.git#9f97630
+   -----> Downloading Jvmkill Agent 1.12.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.12.0_RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 1.8.0_162 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_162.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (0.9s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.10.0_RELEASE.tar.gz (found in cache)
+          Loaded Classes: 12840, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.5.0_RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.11.0_RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.3.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.3.0_RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (58.5M)
+   Uploading complete
+   Stopping instance e6b6b318-68a5-4162-bb27-9389b8ba94d0
+   Destroying container
+   Successfully destroyed container
+
+Waiting for app to start...
+Start unsuccessful
+
+TIP: use 'cf logs pal-tracker --recent' for more information
+FAILED
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf log
+'log' is not a registered command. See 'cf help -a'
+
+Did you mean?
+      org
+      logs
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf logs
+Incorrect Usage: the required argument `APP_NAME` was not provided
+
+NAME:
+   logs - Tail or show recent logs for an app
+
+USAGE:
+   cf logs APP_NAME
+
+OPTIONS:
+   --recent      Dump recent logs instead of tailing
+
+SEE ALSO:
+   app, apps, ssh
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf logs pal-tracker
+Retrieving logs for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+^C
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf logs pal-tracker --recent
+Retrieving logs for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+   2018-10-09T10:01:27.84-0400 [CELL/0] OUT Successfully destroyed container
+   2018-10-09T10:01:35.15-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [app/:na]
+   2018-10-09T10:01:35.15-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [app/:na]
+   2018-10-09T10:01:35.20-0400 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-10-09T10:01:35.20-0400 [CELL/SSHD/0] OUT Exit status 0
+   2018-10-09T10:01:35.33-0400 [CELL/0] OUT Stopping instance 9ad23375-87e4-4b06-5fc7-eafd
+   2018-10-09T10:01:35.33-0400 [CELL/0] OUT Destroying container
+   2018-10-09T10:01:35.36-0400 [API/1] OUT Process has crashed with type: "web"
+   2018-10-09T10:01:35.37-0400 [API/1] OUT App instance exited with guid 5a51397c-5330-4e9a-be4f-cf55038f3596 payload: {"instance"=>"9ad23375-87e4-4b06-5fc7-eafd", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1539093695313082469, "version"=>"3a522e8e-eb85-4b9f-b43a-25cd97c67988"}
+   2018-10-09T10:01:35.37-0400 [CELL/0] OUT Creating container
+   2018-10-09T10:01:35.67-0400 [CELL/0] OUT Successfully destroyed container
+   2018-10-09T10:01:35.68-0400 [CELL/0] OUT Successfully created container
+   2018-10-09T10:01:36.53-0400 [CELL/0] OUT Starting health monitoring of container
+   2018-10-09T10:01:36.62-0400 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=90408K -XX:ReservedCodeCacheSize=240M -Xss1M -Xmx446167K
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2018-10-09T10:01:37.87-0400 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v1.5.4.RELEASE)
+   2018-10-09T10:01:38.03-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:38.029  INFO 16 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2018-10-09T10:01:38.03-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:38.035  INFO 16 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2018-10-09T10:01:38.04-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:38.047  INFO 16 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on aca3d5a3-13c1-4870-4076-7114 with PID 16 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-10-09T10:01:38.04-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:38.047  INFO 16 --- [           main] i.p.pal.tracker.PalTrackerApplication    : The following profiles are active: cloud
+   2018-10-09T10:01:38.12-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:38.122  INFO 16 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:01:38 UTC 2018]; root of context hierarchy
+   2018-10-09T10:01:39.52-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.526  INFO 16 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+   2018-10-09T10:01:39.54-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.541  INFO 16 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-10-09T10:01:39.54-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.542  INFO 16 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+   2018-10-09T10:01:39.63-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.636  INFO 16 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-10-09T10:01:39.63-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.636  INFO 16 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1518 ms
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.786  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.787  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.787  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.787  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.787  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-10-09T10:01:39.78-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.788  INFO 16 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+   2018-10-09T10:01:39.84-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.847  INFO 16 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+   2018-10-09T10:01:39.86-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.866  INFO 16 --- [           main] utoConfigurationReportLoggingInitializer :
+   2018-10-09T10:01:39.86-0400 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.876 ERROR 16 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT java.lang.IllegalArgumentException: Could not resolve placeholder 'WELCOME_MESSAGE' in value "${WELCOME_MESSAGE}"
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [classes/:na]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [app/:na]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [app/:na]
+   2018-10-09T10:01:39.87-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.878  INFO 16 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:01:38 UTC 2018]; root of context hierarchy
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:01:39.881  WARN 16 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:01:38 UTC 2018]; root of context hierarchy
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [classes/:na]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [app/:na]
+   2018-10-09T10:01:39.88-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [app/:na]
+   2018-10-09T10:01:39.93-0400 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-10-09T10:01:39.93-0400 [CELL/SSHD/0] OUT Exit status 0
+   2018-10-09T10:01:40.04-0400 [CELL/0] OUT Stopping instance aca3d5a3-13c1-4870-4076-7114
+   2018-10-09T10:01:40.04-0400 [CELL/0] OUT Destroying container
+   2018-10-09T10:01:40.05-0400 [API/1] OUT Process has crashed with type: "web"
+   2018-10-09T10:01:40.07-0400 [API/1] OUT App instance exited with guid 5a51397c-5330-4e9a-be4f-cf55038f3596 payload: {"instance"=>"aca3d5a3-13c1-4870-4076-7114", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1539093700038185517, "version"=>"3a522e8e-eb85-4b9f-b43a-25cd97c67988"}
+   2018-10-09T10:01:40.35-0400 [CELL/0] OUT Successfully destroyed container
+   2018-10-09T10:02:40.04-0400 [CELL/0] OUT Creating container
+   2018-10-09T10:02:40.38-0400 [CELL/0] OUT Successfully created container
+   2018-10-09T10:02:41.47-0400 [CELL/0] OUT Starting health monitoring of container
+   2018-10-09T10:02:41.56-0400 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx446167K -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=90408K -XX:ReservedCodeCacheSize=240M -Xss1M
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2018-10-09T10:02:43.19-0400 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2018-10-09T10:02:43.20-0400 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v1.5.4.RELEASE)
+   2018-10-09T10:02:43.40-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:43.397  INFO 22 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2018-10-09T10:02:43.40-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:43.403  INFO 22 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2018-10-09T10:02:43.41-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:43.413  INFO 22 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on 87bd85f0-4d27-4ce9-5abe-a4ab with PID 22 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-10-09T10:02:43.41-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:43.413  INFO 22 --- [           main] i.p.pal.tracker.PalTrackerApplication    : The following profiles are active: cloud
+   2018-10-09T10:02:43.47-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:43.478  INFO 22 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:02:43 UTC 2018]; root of context hierarchy
+   2018-10-09T10:02:45.14-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.143  INFO 22 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+   2018-10-09T10:02:45.16-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.163  INFO 22 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-10-09T10:02:45.16-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.165  INFO 22 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+   2018-10-09T10:02:45.27-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.275  INFO 22 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-10-09T10:02:45.27-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.275  INFO 22 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1801 ms
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.457  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.458  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.458  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.458  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.458  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-10-09T10:02:45.45-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.458  INFO 22 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+   2018-10-09T10:02:45.51-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.515  INFO 22 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+   2018-10-09T10:02:45.53-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.534  INFO 22 --- [           main] utoConfigurationReportLoggingInitializer :
+   2018-10-09T10:02:45.53-0400 [APP/PROC/WEB/0] OUT Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.544 ERROR 22 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT java.lang.IllegalArgumentException: Could not resolve placeholder 'WELCOME_MESSAGE' in value "${WELCOME_MESSAGE}"
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [classes/:na]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [app/:na]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [app/:na]
+   2018-10-09T10:02:45.54-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.546  INFO 22 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:02:43 UTC 2018]; root of context hierarchy
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 2018-10-09 14:02:45.549  WARN 22 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6438a396: startup date [Tue Oct 09 14:02:43 UTC 2018]; root of context hierarchy
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:427) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:999) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.9.RELEASE.jar!/:4.3.9.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:750) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.4.RELEASE.jar!/:1.5.4.RELEASE]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at io.pivotal.pal.tracker.PalTrackerApplication.main(PalTrackerApplication.java:10) [classes/:na]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48) [app/:na]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87) [app/:na]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50) [app/:na]
+   2018-10-09T10:02:45.55-0400 [APP/PROC/WEB/0] OUT 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51) [app/:na]
+   2018-10-09T10:02:45.59-0400 [APP/PROC/WEB/0] OUT Exit status 1
+   2018-10-09T10:02:45.60-0400 [CELL/SSHD/0] OUT Exit status 0
+   2018-10-09T10:02:45.72-0400 [CELL/0] OUT Stopping instance 87bd85f0-4d27-4ce9-5abe-a4ab
+   2018-10-09T10:02:45.72-0400 [CELL/0] OUT Destroying container
+   2018-10-09T10:02:45.74-0400 [API/1] OUT Process has crashed with type: "web"
+   2018-10-09T10:02:45.76-0400 [API/1] OUT App instance exited with guid 5a51397c-5330-4e9a-be4f-cf55038f3596 payload: {"instance"=>"87bd85f0-4d27-4ce9-5abe-a4ab", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1539093765716476596, "version"=>"3a522e8e-eb85-4b9f-b43a-25cd97c67988"}
+   2018-10-09T10:02:46.05-0400 [CELL/0] OUT Successfully destroyed container
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf set-env help
+Incorrect Usage: the required arguments `ENV_VAR_NAME` and `ENV_VAR_VALUE` were not provided
+
+NAME:
+   set-env - Set an env variable for an app
+
+USAGE:
+   cf set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE
+
+ALIAS:
+   se
+
+SEE ALSO:
+   apps, env, restart, set-running-environment-variable-group, set-staging-environment-variable-group, unset-env
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf set-env help
+Incorrect Usage: the required arguments `ENV_VAR_NAME` and `ENV_VAR_VALUE` were not provided
+
+NAME:
+   set-env - Set an env variable for an app
+
+USAGE:
+   cf set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE
+
+ALIAS:
+   se
+
+SEE ALSO:
+   apps, env, restart, set-running-environment-variable-group, set-staging-environment-variable-group, unset-env
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf set-env pal-tracker WELCOME_MESSAGE "hello from cf"
+Setting env variable 'WELCOME_MESSAGE' to 'hello from cf' for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+TIP: Use 'cf restage pal-tracker' to ensure your env variable changes take effect
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf restage pal-tracker
+Restaging app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading php_buildpack...
+   Downloading dotnet_core_buildpack...
+   Downloading python_buildpack...
+   Downloaded python_buildpack
+   Downloading staticfile_buildpack...
+   Downloaded php_buildpack
+   Downloaded dotnet_core_buildpack
+   Downloading java_buildpack_offline...
+   Downloaded binary_buildpack
+   Downloading ruby_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading go_buildpack...
+   Downloaded go_buildpack
+   Downloaded java_buildpack_offline
+   Downloaded staticfile_buildpack
+   Downloaded ruby_buildpack
+   Creating container
+   Successfully created container
+   Downloading build artifacts cache...
+   Downloading app package...
+   Downloaded build artifacts cache (131B)
+   Downloaded app package (12.3M)
+   -----> Java Buildpack v4.8 (offline) | https://github.com/cloudfoundry/java-buildpack.git#9f97630
+   -----> Downloading Jvmkill Agent 1.12.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.12.0_RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 1.8.0_162 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_162.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.10.0_RELEASE.tar.gz (found in cache)
+          Loaded Classes: 12840, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.5.0_RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.11.0_RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.3.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.3.0_RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (58.5M)
+   Uploading complete
+   Stopping instance a1129f13-8d5a-446b-95c2-647d4e5aad1c
+   Destroying container
+   Successfully destroyed container
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:08:08 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext
+                 -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.10.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250
+                 -loadedClasses=13548 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.
+                 org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory         disk
+#0   running   2018-10-09T14:08:21Z   0.0%   259.5M of 1G   137.5M of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf app help
+Showing health and status for app help in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+App help not found
+FAILED
+pal_user@EXPLODE:~/workspace/pal-tracker$ gradle app
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'app' not found in root project 'pal-tracker'.
+
+* Try:
+Run gradle tasks to get a list of available tasks. Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 0s
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf scale
+Incorrect Usage: the required argument `APP_NAME` was not provided
+
+NAME:
+   scale - Change or view the instance count, disk space limit, and memory limit for an app
+
+USAGE:
+   cf scale APP_NAME [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]
+
+OPTIONS:
+   -f      Force restart of app without prompt
+   -i      Number of instances
+   -k      Disk limit (e.g. 256M, 1024M, 1G)
+   -m      Memory limit (e.g. 256M, 1024M, 1G)
+
+SEE ALSO:
+   push
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf scale pal-tracker
+Showing current scale of app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+
+memory: 1G
+disk: 1G
+instances: 1
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf scale help
+FAILED
+App help not found
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf app pal-tracker
+Showing health and status for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:08:08 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:           web
+instances:      1/1
+memory usage:   1024M
+     state     since                  cpu    memory         disk
+#0   running   2018-10-09T14:08:22Z   0.1%   310.4M of 1G   137.5M of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf scale pal-tracker -m 768Mb -f
+Scaling app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+Stopping app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+
+Starting app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+1 of 1 instances running
+
+App started
+
+
+OK
+
+App pal-tracker was started using this command `JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" && CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.10.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250 -loadedClasses=13548 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
+
+Showing health and status for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+
+requested state: started
+instances: 1/1
+usage: 768M x 1 instances
+urls: pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded: Tue Oct 9 14:01:00 UTC 2018
+stack: cflinuxfs2
+buildpack: client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+     state     since                    cpu    memory         disk           details
+#0   running   2018-10-09 10:15:59 AM   0.0%   249M of 768M   137.5M of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf app pal-tracker
+Showing health and status for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:08:08 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:           web
+instances:      1/1
+memory usage:   768M
+     state     since                  cpu    memory         disk
+#0   running   2018-10-09T14:15:59Z   0.0%   249M of 768M   137.5M of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf scale pal-tracker -i 2
+Scaling app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf app pal-tracker
+Showing health and status for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:08:08 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:           web
+instances:      1/2
+memory usage:   768M
+     state      since                  cpu    memory           disk
+#0   running    2018-10-09T14:15:59Z   0.2%   231.1M of 768M   137.5M of 1G
+#1   starting   2018-10-09T14:17:03Z   0.0%   0 of 768M        0 of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf app pal-tracker
+Showing health and status for app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:08:08 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:           web
+instances:      2/2
+memory usage:   768M
+     state     since                  cpu    memory           disk
+#0   running   2018-10-09T14:15:59Z   0.3%   231.1M of 768M   137.5M of 1G
+#1   running   2018-10-09T14:17:09Z   0.1%   216.5M of 768M   137.5M of 1G
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf delete pal-tracker
+
+Really delete the app pal-tracker?> y
+Deleting app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push --help
+NAME:
+   push - Push a new app or sync changes to an existing app
+
+USAGE:
+   cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push APP_NAME --droplet DROPLET_PATH
+   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]
+   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]
+   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...
+
+   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]
+
+ALIAS:
+   p
+
+OPTIONS:
+   -b                           Custom buildpack by name (e.g. my-buildpack) or Git URL (e.g. 'https://github.com/cloudfoundry/java-buildpack.git') or Git URL with a branch or tag (e.g. 'https://github.com/cloudfoundry/java-buildpack.git#v3.3.0' for 'v3.3.0' tag). To use built-in buildpacks only, specify 'default' or 'null'
+   -c                           Startup command, set to null to reset to default start command
+   -d                           Specify a custom domain (e.g. private-domain.example.com, apps.internal.com) to use instead of the default domain
+   --docker-image, -o           Docker-image to be used (e.g. user/docker-image-name)
+   --docker-username            Repository username; used with password from environment variable CF_DOCKER_PASSWORD
+   --droplet                    Path to a tgz file with a pre-staged app
+   -f                           Path to manifest
+   --health-check-type, -u      Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')
+   --hostname, -n               Hostname (e.g. my-subdomain)
+   -i                           Number of instances
+   -k                           Disk limit (e.g. 256M, 1024M, 1G)
+   -m                           Memory limit (e.g. 256M, 1024M, 1G)
+   --no-hostname                Map the root domain to this app
+   --no-manifest                Ignore manifest file
+   --no-route                   Do not map a route to this app and remove routes from previous pushes of this app
+   --no-start                   Do not start an app after pushing
+   -p                           Path to app directory or to a zip file of the contents of the app directory
+   --random-route               Create a random route for this app
+   --route-path                 Path for the route
+   -s                           Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)
+   --vars-file                  Path to a variable substitution file for manifest; can specify multiple times
+   --var                        Variable key value pair for variable substitution, (e.g., name=app1); can specify multiple times
+   -t                           Time (in seconds) allowed to elapse between starting up an app and the first healthy response from the app
+
+ENVIRONMENT:
+   CF_STAGING_TIMEOUT=15        Max wait time for buildpack staging, in minutes
+   CF_STARTUP_TIMEOUT=5         Max wait time for app instance startup, in minutes
+   CF_DOCKER_PASSWORD=          Password used for private docker repository
+
+SEE ALSO:
+   apps, create-app-manifest, logs, ssh, start
+pal_user@EXPLODE:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is up to date with 'origin_kiran/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   manifest.yml
+	new file:   src/main/java/io/pivotal/pal/tracker/EnvController.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   build.gradle
+	modified:   manifest.yml
+	modified:   src/main/java/io/pivotal/pal/tracker/EnvController.java
+	modified:   src/main/java/io/pivotal/pal/tracker/WelcomeController.java
+	modified:   src/test/java/test/pivotal/pal/tracker/EnvControllerTest.java
+
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push help
+Pushing from manifest to org jenny-xiao / space sandbox as jxiao1@ford.com...
+Using manifest file /home/pal_user/workspace/pal-tracker/manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:       help
+  path:       /home/pal_user/workspace/pal-tracker/build/libs/pal-tracker.jar
+  env:
++   WELCOME_MESSAGE
+  routes:
++   help-busy-jackal.apps.pikes.pal.pivotal.io
+
+Creating app help...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 316.33 KiB / 316.33 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading python_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading php_buildpack...
+   Downloading staticfile_buildpack...
+   Downloaded nodejs_buildpack
+   Downloading java_buildpack_offline...
+   Downloaded php_buildpack
+   Downloaded python_buildpack
+   Downloading ruby_buildpack...
+   Downloading go_buildpack...
+   Downloaded binary_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded staticfile_buildpack
+   Downloaded java_buildpack_offline
+   Downloaded ruby_buildpack
+   Downloaded go_buildpack
+   Downloaded dotnet_core_buildpack
+   Creating container
+   Successfully created container
+   Downloading app package...
+   Downloaded app package (12.3M)
+   -----> Java Buildpack v4.8 (offline) | https://github.com/cloudfoundry/java-buildpack.git#9f97630
+   -----> Downloading Jvmkill Agent 1.12.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.12.0_RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 1.8.0_162 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_162.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.2s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.10.0_RELEASE.tar.gz (found in cache)
+          Loaded Classes: 12840, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.5.0_RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.11.0_RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.3.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.3.0_RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (131B)
+   Uploaded droplet (58.5M)
+
+Waiting for app to start...
+   Uploading complete
+   Stopping instance 892413de-115b-425c-ae15-b339c17e0a13
+   Destroying container
+   Successfully destroyed container
+
+name:              help
+requested state:   started
+routes:            help-busy-jackal.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:23:19 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext
+                 -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.10.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250
+                 -loadedClasses=13548 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.
+                 org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory        disk
+#0   running   2018-10-09T14:23:35Z   0.0%   92.1M of 1G   137.5M of 1G
+
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf delete help
+
+Really delete the app help?> y
+Deleting app help in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf push pal-tracker -f manifest.yml
+Pushing from manifest to org jenny-xiao / space sandbox as jxiao1@ford.com...
+Using manifest file manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:       pal-tracker
+  path:       /home/pal_user/workspace/pal-tracker/build/libs/pal-tracker.jar
+  env:
++   WELCOME_MESSAGE
+  routes:
++   pal-tracker-happy-llama.apps.pikes.pal.pivotal.io
+
+Creating app pal-tracker...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 316.33 KiB / 316.33 KiB [==================================================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading binary_buildpack...
+   Downloading nodejs_buildpack...
+   Downloading python_buildpack...
+   Downloading go_buildpack...
+   Downloading staticfile_buildpack...
+   Downloaded go_buildpack
+   Downloading java_buildpack_offline...
+   Downloaded python_buildpack
+   Downloaded nodejs_buildpack
+   Downloading php_buildpack...
+   Downloaded staticfile_buildpack
+   Downloading ruby_buildpack...
+   Downloaded binary_buildpack
+   Downloading dotnet_core_buildpack...
+   Downloaded ruby_buildpack
+   Downloaded php_buildpack
+   Downloaded dotnet_core_buildpack
+   Downloaded java_buildpack_offline
+   Creating container
+   Successfully created container
+   Downloading app package...
+   Downloaded app package (12.3M)
+   -----> Java Buildpack v4.8 (offline) | https://github.com/cloudfoundry/java-buildpack.git#9f97630
+   -----> Downloading Jvmkill Agent 1.12.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.12.0_RELEASE.so (found in cache)
+   -----> Downloading Open Jdk JRE 1.8.0_162 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_162.tar.gz (found in cache)
+          Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+          JVM DNS caching disabled in lieu of BOSH DNS caching
+   -----> Downloading Open JDK Like Memory Calculator 3.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.10.0_RELEASE.tar.gz (found in cache)
+          Loaded Classes: 12840, Threads: 250
+   -----> Downloading Client Certificate Mapper 1.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.5.0_RELEASE.jar (found in cache)
+   -----> Downloading Container Security Provider 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.11.0_RELEASE.jar (found in cache)
+   -----> Downloading Spring Auto Reconfiguration 2.3.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.3.0_RELEASE.jar (found in cache)
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading build artifacts cache...
+   Uploading droplet...
+   Uploaded build artifacts cache (130B)
+   Uploaded droplet (58.5M)
+   Uploading complete
+   Stopping instance 7c50a0f1-66c6-48e3-88ca-5f41b7d094fb
+   Destroying container
+   Successfully destroyed container
+
+Waiting for app to start...
+
+name:              pal-tracker
+requested state:   started
+routes:            pal-tracker-happy-llama.apps.pikes.pal.pivotal.io
+last uploaded:     Tue 09 Oct 10:25:07 EDT 2018
+stack:             cflinuxfs2
+buildpacks:        client-certificate-mapper=1.5.0_RELEASE container-security-provider=1.11.0_RELEASE
+                   java-buildpack=v4.8-offline-https://github.com/cloudfoundry/java-buildpack.git#9f97630 java-main java-opts java-security
+                   jvmkill-agent=1.12.0_RELEASE open-jdk-l...
+
+type:            web
+instances:       1/1
+memory usage:    1024M
+start command:   JAVA_OPTS="-agentpath:$PWD/.java-buildpack/open_jdk_jre/bin/jvmkill-1.12.0_RELEASE=printHeapHistogram=1 -Djava.io.tmpdir=$TMPDIR
+                 -Djava.ext.dirs=$PWD/.java-buildpack/container_security_provider:$PWD/.java-buildpack/open_jdk_jre/lib/ext
+                 -Djava.security.properties=$PWD/.java-buildpack/java_security/java.security $JAVA_OPTS" &&
+                 CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-3.10.0_RELEASE -totMemory=$MEMORY_LIMIT -stackThreads=250
+                 -loadedClasses=13548 -poolType=metaspace -vmOptions="$JAVA_OPTS") && echo JVM Memory Configuration: $CALCULATED_MEMORY && JAVA_OPTS="$JAVA_OPTS
+                 $CALCULATED_MEMORY" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/.
+                 org.springframework.boot.loader.JarLauncher
+     state     since                  cpu    memory      disk
+#0   running   2018-10-09T14:25:22Z   0.0%   44K of 1G   8K of 1G
+
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf help map-route
+NAME:
+   map-route - Add a url route to an app
+
+USAGE:
+   Map an HTTP route:
+      cf map-route APP_NAME DOMAIN [--hostname HOSTNAME] [--path PATH]
+
+   Map a TCP route:
+      cf map-route APP_NAME DOMAIN (--port PORT | --random-port)
+
+EXAMPLES:
+   cf map-route my-app example.com                              # example.com
+   cf map-route my-app example.com --hostname myhost            # myhost.example.com
+   cf map-route my-app example.com --hostname myhost --path foo # myhost.example.com/foo
+   cf map-route my-app example.com --port 5000                  # example.com:5000
+
+OPTIONS:
+   --hostname, -n      Hostname for the HTTP route (required for shared domains)
+   --path              Path for the HTTP route
+   --port              Port for the TCP route
+   --random-port       Create a random port for the TCP route
+
+SEE ALSO:
+   create-route, routes
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf domain
+'domain' is not a registered command. See 'cf help -a'
+
+Did you mean?
+      domains
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf domains
+Getting domains in org jenny-xiao as jxiao1@ford.com...
+name                        status   type
+apps.pikes.pal.pivotal.io   shared
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf map-route pal-tracker pal-tracker-happy-llama.apps.pikes.pal.pivotal.io --hostname jenny
+FAILED
+Domain pal-tracker-happy-llama.apps.pikes.pal.pivotal.io not found
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf map-route pal-tracker apps.pikes.pal.pivotal.io --hostname jenny
+Creating route jenny.apps.pikes.pal.pivotal.io for org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+Adding route jenny.apps.pikes.pal.pivotal.io to app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf apps
+Getting apps in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+
+name          requested state   instances   memory   disk   urls
+pal-tracker   started           1/1         1G       1G     pal-tracker-happy-llama.apps.pikes.pal.pivotal.io, jenny.apps.pikes.pal.pivotal.io
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf unmap-route --help
+NAME:
+   unmap-route - Remove a url route from an app
+
+USAGE:
+   Unmap an HTTP route:
+      cf unmap-route APP_NAME DOMAIN [--hostname HOSTNAME] [--path PATH]
+
+   Unmap a TCP route:
+      cf unmap-route APP_NAME DOMAIN --port PORT
+
+EXAMPLES:
+   cf unmap-route my-app example.com                              # example.com
+   cf unmap-route my-app example.com --hostname myhost            # myhost.example.com
+   cf unmap-route my-app example.com --hostname myhost --path foo # myhost.example.com/foo
+   cf unmap-route my-app example.com --port 5000                  # example.com:5000
+
+OPTIONS:
+   --hostname, -n      Hostname used to identify the HTTP route
+   --path              Path used to identify the HTTP route
+   --port              Port used to identify the TCP route
+
+SEE ALSO:
+   delete-route, routes
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf unmap-route pal-tracker apps.pikes.pal.pivotal.io --hostname jenny.apps.pikes.pal.pivotal.io
+FAILED
+Route jenny.apps.pikes.pal.pivotal.io not found
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf unmap-route pal-tracker apps.pikes.pal.pivotal.io --hostname jenny
+Removing route jenny.apps.pikes.pal.pivotal.io from app pal-tracker in org jenny-xiao / space sandbox as jxiao1@ford.com...
+OK
+pal_user@EXPLODE:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is up to date with 'origin_kiran/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   manifest.yml
+	new file:   src/main/java/io/pivotal/pal/tracker/EnvController.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   build.gradle
+	modified:   manifest.yml
+	modified:   src/main/java/io/pivotal/pal/tracker/EnvController.java
+	modified:   src/main/java/io/pivotal/pal/tracker/WelcomeController.java
+	modified:   src/test/java/test/pivotal/pal/tracker/EnvControllerTest.java
+
+pal_user@EXPLODE:~/workspace/pal-tracker$ git add .
+pal_user@EXPLODE:~/workspace/pal-tracker$ git commit -m "Completed Lab 2"
+[master 93de667] Completed Lab 2
+ 5 files changed, 63 insertions(+), 6 deletions(-)
+ create mode 100644 manifest.yml
+ create mode 100644 src/main/java/io/pivotal/pal/tracker/EnvController.java
+pal_user@EXPLODE:~/workspace/pal-tracker$ git status
+On branch master
+Your branch is ahead of 'origin_kiran/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pal_user@EXPLODE:~/workspace/pal-tracker$ git push
+Username for 'https://github.com': hongxiao20
+Password for 'https://hongxiao20@github.com':
+remote: Permission to kiransuresh85/pal-tracker.git denied to hongxiao20.
+fatal: unable to access 'https://github.com/kiransuresh85/pal-tracker.git/': The requested URL returned error: 403
+pal_user@EXPLODE:~/workspace/pal-tracker$ git push
+Username for 'https://github.com': hongxiao20
+Password for 'https://hongxiao20@github.com':
+remote: Permission to kiransuresh85/pal-tracker.git denied to hongxiao20.
+fatal: unable to access 'https://github.com/kiransuresh85/pal-tracker.git/': The requested URL returned error: 403
+pal_user@EXPLODE:~/workspace/pal-tracker$ git remote -v
+origin	https://github.com/hongxiao20/pal-tracker.git (fetch)
+origin	https://github.com/hongxiao20/pal-tracker.git (push)
+origin_kiran	https://github.com/kiransuresh85/pal-tracker.git (fetch)
+origin_kiran	https://github.com/kiransuresh85/pal-tracker.git (push)
+pal_user@EXPLODE:~/workspace/pal-tracker$ git push origin
+Username for 'https://github.com': hongxiao20
+Password for 'https://hongxiao20@github.com':
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (20/20), 2.01 KiB | 514.00 KiB/s, done.
+Total 20 (delta 3), reused 1 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/hongxiao20/pal-tracker.git
+   9295dee..93de667  master -> master
+pal_user@EXPLODE:~/workspace/pal-tracker$ cd ../assignment-submission
+pal_user@EXPLODE:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://http://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/
+> Task :cloudNativeDeveloperCloudFoundry FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':cloudNativeDeveloperCloudFoundry'.
+> java.net.UnknownHostException: http: Name or service not known
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+1 actionable task: 1 executed
+pal_user@EXPLODE:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperCloudFoundry
+
+Starting assignment...
+
+GET https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/
+GET https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/env
+
+Assignment was successful.
+
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+pal_user@EXPLODE:~/workspace/assignment-submission$ cat build.gradle
+buildscript {
+    repositories {
+        maven { url "http://platform-acceleration-lab-maven.s3.amazonaws.com" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath "io.pivotal.pal.assignments:assignments-plugin:3.5.1"
+    }
+}
+
+apply plugin: "io.pivotal.pal.assignments.plugin"
+
+assignments {
+    apiUrl = "https://assignments.education.pivotal.io/"
+    emails = [
+            "ksures56@ford.com",
+            "jxiao1@ford.com",
+    ]
+    cohortIdentifier = "349802575"
+}
+
+defaultTasks "tasks"
+pal_user@EXPLODE:~/workspace/assignment-submission$ vi build.gradle
+pal_user@EXPLODE:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/
+
+> Task :cloudNativeDeveloperCloudFoundry
+
+Starting assignment...
+
+GET https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/
+GET https://pal-tracker-happy-llama.apps.pikes.pal.pivotal.io/env
+
+Assignment was successful.
+
+
+BUILD SUCCESSFUL in 2s
+1 actionable task: 1 executed
+pal_user@EXPLODE:~/workspace/assignment-submission$ cd ..
+pal_user@EXPLODE:~/workspace$ ls
+assignment-submission  pal-tracker  pal-tracker.zip  README.md
+pal_user@EXPLODE:~/workspace$ cd pal-tracker
+pal_user@EXPLODE:~/workspace/pal-tracker$ ls
+build  build.gradle  gradle  gradlew  gradlew.bat  manifest.yml  out  pal-tracker.iml  README.md  settings.gradle  src
+pal_user@EXPLODE:~/workspace/pal-tracker$ git cherry-pick pipeline-start
+[master 2094c6b] Add deployment pipeline
+ Author: Mike Gehard <mike.gehard@gmail.com>
+ Date: Wed Jan 3 16:17:48 2018 -0700
+ 1 file changed, 39 insertions(+)
+ create mode 100644 .travis.yml
+pal_user@EXPLODE:~/workspace/pal-tracker$ ls
+build  build.gradle  gradle  gradlew  gradlew.bat  manifest.yml  out  pal-tracker.iml  README.md  settings.gradle  src
+pal_user@EXPLODE:~/workspace/pal-tracker$ dir travis.yml/s
+dir: cannot access 'travis.yml/s': No such file or directory
+pal_user@EXPLODE:~/workspace/pal-tracker$ dir
+build  build.gradle  gradle  gradlew  gradlew.bat  manifest.yml  out  pal-tracker.iml  README.md  settings.gradle  src
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf create-space --help
+NAME:
+   create-space - Create a space
+
+USAGE:
+   cf create-space SPACE [-o ORG] [-q SPACE_QUOTA]
+
+OPTIONS:
+   -o      Organization
+   -q      Quota to assign to the newly created space
+
+SEE ALSO:
+   set-space-isolation-segment, space-quotas, spaces, target
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf space-quotas
+Getting space quotas as jxiao1@ford.com...
+OK
+
+name   total memory   instance memory   routes   service instances   paid plans   app instances   route ports
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf target
+api endpoint:   https://api.sys.pikes.pal.pivotal.io
+api version:    2.103.0
+user:           jxiao1@ford.com
+org:            jenny-xiao
+space:          sandbox
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf create-space --help
+NAME:
+   create-space - Create a space
+
+USAGE:
+   cf create-space SPACE [-o ORG] [-q SPACE_QUOTA]
+
+OPTIONS:
+   -o      Organization
+   -q      Quota to assign to the newly created space
+
+SEE ALSO:
+   set-space-isolation-segment, space-quotas, spaces, target
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf create-space --help
+NAME:
+   create-space - Create a space
+
+USAGE:
+   cf create-space SPACE [-o ORG] [-q SPACE_QUOTA]
+
+OPTIONS:
+   -o      Organization
+   -q      Quota to assign to the newly created space
+
+SEE ALSO:
+   set-space-isolation-segment, space-quotas, spaces, target
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf create-space review
+Creating space review in org jenny-xiao as jxiao1@ford.com...
+OK
+Assigning role RoleSpaceManager to user jxiao1@ford.com in org jenny-xiao / space review as jxiao1@ford.com...
+OK
+Assigning role RoleSpaceDeveloper to user jxiao1@ford.com in org jenny-xiao / space review as jxiao1@ford.com...
+OK
+
+TIP: Use 'cf target -o "jenny-xiao" -s "review"' to target new space
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf spaces
+Getting spaces in org jenny-xiao as jxiao1@ford.com...
+
+name
+review
+sandbox
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf space-quotas
+Getting space quotas as jxiao1@ford.com...
+OK
+
+name   total memory   instance memory   routes   service instances   paid plans   app instances   route ports
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf target -s review
+api endpoint:   https://api.sys.pikes.pal.pivotal.io
+api version:    2.103.0
+user:           jxiao1@ford.com
+org:            jenny-xiao
+space:          review
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf apps
+Getting apps in org jenny-xiao / space review as jxiao1@ford.com...
+OK
+
+No apps found
+pal_user@EXPLODE:~/workspace/pal-tracker$ cf target
+api endpoint:   https://api.sys.pikes.pal.pivotal.io
+api version:    2.103.0
+user:           jxiao1@ford.com
+org:            jenny-xiao
+space:          review
+pal_user@EXPLODE:~/workspace/pal-tracker$

@@ -1,0 +1,38 @@
+pal_user@EXPLODE:~/workspace/pal-tracker$ git push --tags
+Username for 'https://github.com': hongxiao20
+Password for 'https://hongxiao20@github.com':
+Counting objects: 182, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (182/182), 81.07 KiB | 40.54 MiB/s, done.
+Total 182 (delta 23), reused 182 (delta 23)
+remote: Resolving deltas: 100% (23/23), done.
+To https://github.com/hongxiao20/pal-tracker.git
+ * [new tag]         actuator-solution -> actuator-solution
+ * [new tag]         actuator-start -> actuator-start
+ * [new tag]         deployment-solution -> deployment-solution
+ * [new tag]         deployment-start -> deployment-start
+ * [new tag]         jdbc-solution -> jdbc-solution
+ * [new tag]         jdbc-start -> jdbc-start
+ * [new tag]         migration-solution -> migration-solution
+ * [new tag]         migration-start -> migration-start
+ * [new tag]         mvc-solution -> mvc-solution
+ * [new tag]         mvc-start -> mvc-start
+ * [new tag]         pipeline-solution -> pipeline-solution
+ * [new tag]         pipeline-start -> pipeline-start
+ * [new tag]         security-solution -> security-solution
+ * [new tag]         security-start -> security-start
+ * [new tag]         spring-boot-solution -> spring-boot-solution
+ * [new tag]         spring-boot-start -> spring-boot-start
+
+
+cf push pal-tracker -p build/libs/pal-tracker.jar --random-route
+
+My bootstrap application
+https://pal-tracker-talkative-ostrich.apps.pikes.pal.pivotal.io/
+
+how to see the depency??
+ ./gradlew dependencies
+
+
+git show deployment-start
