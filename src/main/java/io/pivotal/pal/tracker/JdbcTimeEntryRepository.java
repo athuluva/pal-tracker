@@ -24,7 +24,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository{
     private LocalDate date;
     private int hours;
 
-    //private String insert = "INSERT INTO time_entries ('project_id',user_id,date,hours) VALUES (?,?,?,?)";
+    private String insert = "INSERT INTO time_entries (project_id,user_id,date,hours) VALUE (?,?,?,?)";
     private String retrieveRecord = "Select * from time_entries where id = ?";
 
     @Autowired
@@ -32,11 +32,11 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository{
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-   /* @Override
+    @Override
     public TimeEntry create(TimeEntry timeEntry) {
-        final PreparedStatementCreator psc = new PreparedStatementCreator() {
+        PreparedStatementCreator psc = new PreparedStatementCreator() {
             @Override
-            public PreparedStatement createPreparedStatement(final Connection connection) throws SQLException {
+            public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
                 final PreparedStatement ps = connection.prepareStatement(insert,Statement.RETURN_GENERATED_KEYS);
                 ps.setLong(1, timeEntry.getProjectId());
                 ps.setLong(2,timeEntry.getUserId());
@@ -53,9 +53,9 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository{
         final long id = holder.getKey().longValue();
 
         return find(id);
-    }*/
+    }
 
-        @Override
+        /*@Override
         public TimeEntry create(TimeEntry timeEntry) {
             KeyHolder generatedKeyHolder = new GeneratedKeyHolder();
 
@@ -75,7 +75,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository{
             }, generatedKeyHolder);
 
             return find(generatedKeyHolder.getKey().longValue());
-        }
+        }*/
 
 
     @Override
